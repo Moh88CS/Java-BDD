@@ -1,6 +1,6 @@
 # Java BDD API Testing Framework with Cucumber and RESTAssured
 
-This project is a **Behavior-Driven Development (BDD)** API testing framework built using **Java**, **Cucumber**, and **RESTAssured**. It transforms the traditional RESTAssured API testing approach into a BDD-style framework, enabling collaboration between technical and non-technical stakeholders by writing tests in a human-readable format. The framework is designed to automate RESTful API testing with a focus on clarity, maintainability, and scalability.
+This project is a **Behavior-Driven Development (BDD)** API testing framework built using **Java**, **Cucumber**, and **RESTAssured**, fully testing Atlassian's Trello APIs (CRUD operations). It transforms the traditional RESTAssured API testing approach into a BDD-style framework, enabling collaboration between technical and non-technical stakeholders by writing tests in a human-readable format. The framework is designed to automate RESTful API testing with a focus on clarity, maintainability, and scalability.
 
 ## Features
 
