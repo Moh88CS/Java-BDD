@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id "com.github.spacialcircumstances.gradle-cucumber-reporting" version '0.1.25'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(
+            'io.rest-assured:rest-assured:5.5.0',
+            'org.junit.jupiter:junit-jupiter:5.11.2',
+            'io.rest-assured:json-schema-validator:5.5.0',
+            'org.junit.jupiter:junit-jupiter-params:5.11.2'
+    )
+    testImplementation(
+            'io.cucumber:cucumber-java:7.20.1',
+            'io.cucumber:cucumber-junit-platform-engine:7.20.1',
+            'io.cucumber:cucumber-picocontainer:7.20.1',
+            'org.junit.platform:junit-platform-suite-engine:1.11.2'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
+
+cucumberReports {
+    projectNameOverride = 'Cucumber BDD test project'
+    outputDir = file('build/cucumber-report')
+    reports = files('build/cucumber-report/json/cucumber-report.json')
+}
