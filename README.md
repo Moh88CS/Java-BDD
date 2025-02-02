@@ -31,8 +31,5 @@ Before you begin, ensure you have the following installed:
    mvn clean install
    mvn test
 
-## Configure Environment
-Update the config.properties file (located in src/test/resources) to set the appropriate environment variables, such as base URLs, credentials, etc.
-
 ## Reporting
 Cucumber generates detailed and interactive reports after test execution. These reports can be found in the target/cucumber-reports directory. They provide insights into test execution, including passed/failed scenarios, step definitions, and error details.
